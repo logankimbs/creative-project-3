@@ -9,6 +9,8 @@
             <h1>Explore Friends</h1>
             <ContactCard :friends="friends" />
         </div>
+
+        {{this.first_name}}
     </div>
 </template>
 
@@ -23,7 +25,10 @@
             ContactCard
         },
         data() {
-            return {}
+            return {
+                first_name: '',
+                last_name: '',
+            }
         },
         computed: {
             friends() {
