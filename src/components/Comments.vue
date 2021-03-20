@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'ProductList',
+  name: 'Comments',
   props: {
     products: Array
   }
