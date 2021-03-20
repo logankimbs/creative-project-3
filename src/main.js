@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import mock from './mock-data'
 
 Vue.config.productionTip = false
+
+import mock from './mock-data'
 
 let data = {
     friends: mock,

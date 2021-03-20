@@ -12,7 +12,7 @@
 
     <div class="section">
         <h1>Explore Friends</h1>
-        <ContactCard />
+        <ContactCard :friends="friends" />
     </div>
 
 </div>
@@ -26,6 +26,14 @@ export default {
     components: {
         ContactCard
     },
+    data() {
+        return {}
+    },
+    computed: {
+        friends() {
+            return this.$root.$data.friends;
+        }
+    }
 }
 </script>
 
