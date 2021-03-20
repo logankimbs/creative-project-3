@@ -1,6 +1,6 @@
 <template>
 <div>
-  <comments :products="products" />
+  <comments />
 </div>
 </template>
 
