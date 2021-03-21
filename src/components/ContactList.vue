@@ -1,12 +1,11 @@
 <template>
     <div>
         <div v-for="contact in this.$root.$data.contacts" v-bind:key="contact.id">
-            <div>{{contact.first_name + " " + contact.last_name}}</div>
-            <div>{{contact.phone_number}}</div>
-            <td class="left">
-                <button>Edit</button>
-                <button @click="removeContact(contact)">Remove</button>
-            </td>
+            <h2>{{contact.first_name + " " + contact.last_name}}</h2>
+            <h2>{{contact.email}}</h2>
+            <h2>{{contact.phone_number}}</h2>
+            <button>Edit</button>
+            <button @click="removeContact(contact)">Remove</button>
         </div>
     </div>
 </template>

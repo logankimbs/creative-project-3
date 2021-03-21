@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <div class="section">
+        <div class="container">
             <h1>Add Friend</h1>
             <form v-on:submit.prevent>
                 <input type="text" placeholder="First Name" id="fName" v-model="fName">
@@ -9,8 +9,7 @@
             </form>
         </div>
 
-        <div class="section">
-            <h1>Explore Friends</h1>
+        <div class="container">
             <ContactCard :friends="friends" />
         </div>
 
