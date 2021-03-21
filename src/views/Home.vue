@@ -1,16 +1,17 @@
 <template>
     <div class="main">
-        <div class="container">
+        <div class="addFriend">
             <h1>Add Friend</h1>
             <form v-on:submit.prevent>
                 <input type="text" placeholder="First Name" id="fName" v-model="fName"><br>
                 <input type="text" placeholder="Last Name" id="lName" v-model="lName"><br>
                 <input type="text" placeholder="Phone Number" id="pNumber" v-model="pNumber"><br>
                 <input type="text" placeholder="Email" id="eMail" v-model="eMail"><br>
-                <button @click="addFriend">Add</button>
+                <button class="add" @click="addFriend">Add</button>
             </form>
-            <hr>
         </div>
+
+        <hr>
 
         <div class="container">
             <ContactCard :friends="friends" />
@@ -57,3 +58,49 @@
         }
     }
 </script>
+
+<style scoped>
+    .addFriend {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    input,
+    .add {
+        width: 60%;
+        padding: 12px 18px;
+        border-radius: 12px;
+        border: solid black 1.8px;
+        margin-bottom: 6px;
+        font-size: large;
+    }
+
+    .add {
+        margin-top: 8px;
+        background-color: rgb(91, 91, 216);
+        font-size: large;
+        color: white;
+        border: none;
+    }
+
+    .add:hover {
+        background-color: rgb(73, 73, 167);
+    }
+
+    /* Mobile Styles */
+    @media only screen and (max-width: 767px) {
+        input, .add {
+            width: 90%;
+        }
+    }
+  
+    /* Tablet Styles */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    }
+
+    /* Desktop Styles */
+    @media only screen and (min-width: 1024px) {
+        
+    }
+</style>
