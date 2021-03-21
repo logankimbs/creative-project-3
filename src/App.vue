@@ -36,4 +36,21 @@
   color: rgb(91, 91, 216);
   text-decoration: underline;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    #nav {
+        padding: 26px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+    
+}
 </style>

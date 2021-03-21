@@ -13,10 +13,7 @@
 
         <hr>
 
-        <div class="container">
-            <ContactCard :friends="friends" />
-        </div>
-
+        <ContactCard :friends="friends" />
     </div>
 </template>
 
@@ -65,6 +62,11 @@
         margin-bottom: 80px;
     }
 
+    h1 {
+        margin-top: 36px;
+        margin-bottom: 26px;
+    }
+
     input,
     .add {
         width: 60%;
@@ -90,7 +92,7 @@
     /* Mobile Styles */
     @media only screen and (max-width: 767px) {
         input, .add {
-            width: 90%;
+            width: 80%;
         }
     }
   
