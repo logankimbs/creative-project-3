@@ -10,6 +10,12 @@
         </div>
         <ContactList />
     </div>
+    <footer>
+            <h3 style="text-align: center; margin-top: 100px; color:rgb(91, 91, 216); padding: 60px;">
+                <h2>Contacts © 2021</h2> 
+                <a href="https://github.com/logankimbs/creative-project-3" target="blank">Github</a>
+            </h3>
+        </footer>
 </div>
 </template>
 

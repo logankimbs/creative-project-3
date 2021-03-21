@@ -86,7 +86,7 @@
     }
 
     button:hover {
-        background-color: rgb(73, 73, 167);
+        background-color: rgb(199, 58, 58);
     }
 
     .name {
