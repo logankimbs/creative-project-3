@@ -9,11 +9,16 @@
 </template>
 
 <style>
+
+* {
+    margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: black;
 }
 
 #nav {
@@ -23,12 +28,12 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
   text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #006638;
+  color: rgb(91, 91, 216);
   text-decoration: underline;
 }
 </style>
