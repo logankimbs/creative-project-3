@@ -56,7 +56,7 @@
     }
 </script>
 
-<style scoped>
+<style>
     .addFriend {
         text-align: center;
         margin-bottom: 80px;
